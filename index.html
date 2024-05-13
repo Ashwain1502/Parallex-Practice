@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="images/mountains_front.png" id="mountains_front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>
+            Parallex Effect
+        </h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ea aspernatur minus ipsam laboriosam, nam nemo deserunt reprehenderit illum sequi consequatur blanditiis ullam! Vitae, saepe impedit. Tempora assumenda blanditiis natus?
+            Deserunt nam molestiae, rerum itaque fugit sequi facilis qui. Odit expedita similique nobis culpa optio totam voluptatem incidunt unde. Soluta nihil quae quisquam assumenda nesciunt cumque dolorem dolore sint non?
+            Recusandae, eaque corrupti? Sunt, repudiandae dignissimos quas iure, soluta nulla esse, sed debitis hic excepturi explicabo. Maxime ullam cum reiciendis, rerum eaque odio commodi tempora, repellendus aliquid praesentium autem delectus.
+            Impedit, fugit nobis numquam quibusdam officia tempore aliquid, laudantium hic dolor aperiam praesentium quasi nam ratione nostrum nesciunt optio et quidem odit repellendus enim autem ullam placeat adipisci? Eos, amet. <br><br>
+            Laudantium, culpa recusandae temporibus architecto fuga dolorem commodi assumenda ullam, quo eaque incidunt veniam dolore expedita rerum nesciunt molestiae laborum saepe. Sint aperiam laudantium distinctio omnis, deserunt inventore nam illum?
+            Minima unde soluta id animi eos dignissimos corporis at, nam ratione, iure eius ipsum, eveniet debitis et dolor deleniti nostrum nihil consequuntur sunt. Facere aliquid nihil est illum libero molestias! <br> <br>
+            Officia, enim cupiditate! Asperiores amet voluptas qui nam accusamus autem odit repudiandae a quo, eos reprehenderit. Nemo, eveniet. Totam architecto in molestias earum reprehenderit. Commodi, sit. Earum nostrum eligendi asperiores.
+            Sunt iste odit numquam beatae nostrum quaerat adipisci dolor maiores, fuga rem omnis voluptatem ipsam ab voluptate fugit doloribus recusandae facere aliquam corrupti quae libero dolorum sint a? Quis, tempore? <br> <br>
+            Exercitationem fuga cum incidunt voluptate delectus quas ipsa accusamus nam, consequuntur amet. Reprehenderit magnam quisquam mollitia, exercitationem possimus quam quod iure corrupti aut facilis eum labore voluptatem numquam culpa fuga?
+            Ad, corrupti est aliquid ipsam porro eveniet eaque ea dignissimos numquam cumque libero soluta necessitatibus inventore accusantium distinctio nesciunt dolorem facilis facere, ullam fuga. Autem cupiditate rerum repellat nam provident?
+        </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05+ 'px';
+            mountains_behind.style.top = value*0.5+'px';
+            mountains_front.style.top = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+</html>
