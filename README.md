@@ -1,2 +1,3 @@
 # Parallex-Practice
-A html and css based parallex animation done by following a youtube tutorial.
+
+An HTML and CSS-based parallex animation is done by following a YouTube tutorial.
