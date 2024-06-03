@@ -1,3 +1,5 @@
 # Parallex-Practice
+An HTML and CSS-based parallax animation is done by following a YouTube tutorial.
 
-An HTML and CSS-based parallex animation is done by following a YouTube tutorial.
+## Functions
+Showing a 3D effect when the user scrolls down from the home screen.
